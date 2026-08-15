@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-Hub</title>
+    
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <script src="java.js"></script>
+  </head>
+  <body>
+    <header id="header">
+    <nav>
+      <div class="logo">
+        <i class="fa-solid fa-microchip"></i>
+        <span
+          ><strong>Innovative</strong
+          ><strong style="color: #2563eb">-Tech</strong></span
+        >
+      </div>
+
+      <div class="right-side" style="margin-right: 0px">
+        <div class="search-box">
+          <input type="text" placeholder="Search products....." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <i class="fa-regular fa-user" style="margin-left: 50px"></i>
+        <p style="font-size: 13px; margin-left: -0px">Account</p>
+        <div class="wishlist-nav">
+          <button type="button" class="wishlist-trigger" id="wishlistToggle">
+            <i class="fa-regular fa-heart" style="margin-right: 2px"></i>
+            <span style="font-size: 13px;">Wishlist(<span id="wishlistCount">0</span>)</span>
+          </button>
+          <div class="wishlist-dropdown" id="wishlistDropdown">
+            <ul id="wishlistList"></ul>
+          </div>
+        </div>
+        <div class="cart-nav">
+          <button type="button" class="cart-trigger" id="cartToggle">
+            <i class="fa-solid fa-cart-shopping" style="margin-right: 2px"></i>
+            <span style="font-size: 13px;">Cart (<span id="cartCount">0</span>)</span>
+          </button>
+          <div class="cart-dropdown" id="cartDropdown">
+            <ul id="cartList"></ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <br></br>
+    <section>
+      <div class="nav-bar-bottom" style="justify-items: center; margin-top: 60px;">
+      <ul class="nav-links" style="display: flex; gap: 70px;">
+        <li><a class="active" href="#">Home</a></li>
+        
+        <li class="dropdown"><a href="#middle-thing">Shop</a>
+        <ul class="dropmenu">
+          <li><a href="#">Laptop</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">SmartPhones</a></li>
+          <li><a href="#">HeadPhones</a></li>
+        </ul>
+        </li>
+        <li><a href="#Deals">Deals</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    
+    </div>
+    </section>
+    <hr id="below-nav">
+    <main>
+      <div id="middle">
+      <div class="middle-info">
+        <button class="new-arrival-btn" style="height: 40px; width: 130px; border: none; background: #2563eb; color: white; border-radius: 5px; animation: fadeOut 2s infinite;">NEW ARRIVALS</button>
+        <h1 style="margin-bottom: -40px; margin-top:20px ;">Premium Electronics.</h1>
+        <br>
+      </br>
+        <h1 class="blue_Content" style="margin-bottom: 20px; color: #2563eb;">2026 Collection.</h1>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; ">
+          Discover the most innovative electronics at an unbeteable price <pre> </pre>
+        </p>
+        
+        <div class="nav-popup">
+          <button id="shopnowBtn" style="animation: fadeInOut 3s infinite; margin-right: 10px;">Shop Now  <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+          <button id="button2">Explore Deals </button>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="Photos/New-Products-Apple-in-2025.webp"
+          alt="Gadgets"
+          style="
+            width: 600px;
+            height: 350px;
+            margin-top: 60px;
+            border-radius: 30px 50px;
+          "
+        />
+      </div>
+    </div>
+
+    </main>
+    <br></br>
+
+    <section id="middle-thing">
+  <div class="middle-ramp">
+  <div class="delivery">
+    <i class="fas fa-truck-moving" style="color: #2563eb; margin-top: 8px; font-size: 25px; margin-right: 8px;"></i>
+    <div>
+      <h3>Free Shipping</h3>
+      <p>On orders over R500</p>
+    </div>
+  </div>
+
+  <div class="warranty">
+    <i class="fas fa-shield" style="color: #2563eb; margin-top: 8px; font-size: 25px; margin-right: 8px;"></i>
+    <div>
+      <h3>1 Year warranty</h3>
+      <p>Quality you can trust</p>
+    </div>
+  </div>
+<div class="Returns">
+    <i class="fas fa-recycle"  style="color: #2563eb; margin-top: 8px; font-size: 25px; margin-right: 8px;"></i>
+    <div>
+      <h3>30-Day Returns</h3>
+      <p>Haasle free returns</p>
+    </div>
+  </div>
+
+  <div class="Support">
+    <i class="fa fa-headphones" aria-hidden="true" style="color: #2563eb; margin-top: 5px; font-size: 25px; margin-right: 8px;"></i>
+    <div>
+      <h3>24/7 Support</h3>
+      <p>We're here to help</p>
+    </div>
+  </div>
+
+</div>
+    </section>
+    <br></br>
+
+    <section>
+      <div id="category" style="justify-items: center; margin-bottom: 15px; margin-top: 50px;">
+      <h2>Category</h2>
+        <hr class="small-divider" style="width: 50px;">
+      <br></br>
+      <footer class="Bottom-info">
+        <div class="category1" style="justify-items: center;" >
+          <img
+            src="Photos/Apple-MacBook-Air-2-up-hero-240304-lp.jpg.og.jpg"
+            class="pop-effect"
+            alt="Laptops"
+            style="width: 400px; height: 250px; border-radius: 50px"
+          />
+
+          <h3 class="Picture_IDs">Laptops</h3>
+        </div>
+        <div class="category2" style="justify-items: center;">
+          <img
+            src="Photos/apple-watch__beyyf7scxu1u_og.png"
+            class="pop-effect"
+            alt="Watch"
+            style="width: 400px; height: 250px; border-radius: 50px"
+          />
+          <h3 class="Picture_IDs">Watch</h3>
+        </div>
+        <div class="category3" style="justify-items: center;">
+          <img
+            src="Photos/iphone_15_plus_black_pdp_image_position-5__wwen_5.webp"
+            class="pop-effect"
+            alt=""
+            style="width: 400px; height: 250px; border-radius: 50px"
+          />
+          <h3 class="Picture_IDs">SmartPhones</h3>
+        </div>
+
+        <footer class="middle-info2">
+        <footer class="part2">
+        
+          <div class="category4">
+          <img src="Photos/Mambo project/Apple-Vision-Pro-availability-hero_big.jpg.large.jpg" alt="">
+          </div>
+        </div>
+
+    <div id="category" style="justify-items: center; margin-top: 50px;">
+    
+      <footer class="Bottom-info">
+        <div class="category1" style="justify-items: center;">
+          <img
+            src="Photos/headphones.jpg"
+            class="pop-effect"
+            alt="Laptops"
+            style="width: 400px; height: 250px; border-radius: 50px"
+          />
+
+          <h3 class="Picture_IDs">Headphones</h3>
+        </div>
+        <div class="category2" style="justify-items: center;">
+          <img
+            src="Photos/pexels-zeleboba-37421859-removebg-preview.png"
+            class="pop-effect"
+            alt="Watch"
+            style="width: 400px; height: 250px; border-radius: 50px"
+          />
+          <h3 class="Picture_IDs">Charger</h3>
+        </div>
+        <div class="category3" style="justify-items: center;">
+          <img
+            src="Photos/accesesories.jpeg"
+            class="pop-effect"
+            alt=""
+            style="width: 400px; height: 250px; border-radius: 50px"
+          />
+          <h3 class="Picture_IDs">Accessories</h3>
+        </div>
+
+        <footer class="middle-info2">
+        <footer class="part2">
+        
+          <div class="category4">
+          <img src="Photos/Mambo project/Apple-Vision-Pro-availability-hero_big.jpg.large.jpg" alt="">
+          </div>
+        </div>
+      
+    </section>
+    
+    <section id="Deals">
+      <section class="Deals-section">
+      <hr id="divider">
+      <h3>Deals</h3>
+        <hr class="small-divider" style="width: 35px;">
+      <div class="">
+        <div class="Top-images" style="display: flex; ">
+          <div class="pop-effect-image">
+            <div class="left-image">
+            <h4 style="color: #eef4fd;">Laptops <i class="fa fa-arrow-right" aria-hidden="true"></i></h4>
+          </div>
+          </div>
+          <div>
+           <div class="pop-effect-image">
+             <div class="right-top">
+              <h4 style="color: #eef4fd;">Smartphones <i class="fa fa-arrow-right" aria-hidden="true"></i></h4>
+            </div>
+           </div>
+            <div class="Bottom" style="display: flex;margin-top: -107px;">
+              <div class="watch">
+                <img src="Photos/pexels-gulsahaydgn-17775091.jpg" alt=""
+                class="pop-effect-image"
+                style="width: 175px;height: 182px; margin-right: 1px;">
+              </div>
+              <div>
+                <img src="Photos/pexels-zeleboba-37421859.jpg" alt=""
+                class="pop-effect-image"
+                style="width: 174px;height: 182px;border-radius: 0px 0px 25px 0px;"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+    </section>
+
+  </body>
+  <footer id="contact">
+      <footer class="End">
+      <br/>
+      <br/>
+      <div style="width: 300px; margin-left: -100px; margin-top: 25px;">
+        <p style="color: white;">Innovative Tech is your trusted destination for the latest technology products. We are commited to providing high-quality laptop, smartphones, gaming accessories and more at competitive prices. Our mission is to make cutting edge technology accessible while delivering exceptional customer service, secure shopping and seamless online experience.</p>
+      </div>
+      
+
+      <div class="form" style="margin-top: 5px;">
+        <section class="form">
+        <form action="\submit_form" method="post">
+          <label for="name" style="color: #eef4fd;">Name:</label><br />
+          <input type="text" name="name" id="name" style=" background: #eef4fd; height: 25px; border-radius: 5px;" required/><br />
+          <label for="surname" style="color: #eef4fd;">Surname:</label><br />
+          <input type="text" name="surname" id="surname" style="background: #eef4fd; height: 25px; border-radius: 5x;"  required /><br />
+          <label for="phone" style="color: #eef4fd;">Phone:</label><br />
+          <input type="tel" name="phone" id="phone" style="background: #eef4fd; height: 25px; border-radius: 5px;"  required /><br />
+          <label for="email" style="color: #eef4fd;">Email:</label><br />
+          <input type="email" name="email" id="email" style="background: #eef4fd; height: 25px; border-radius: 5px;"  required /><br /><br />
+
+          <label for="budget"style="color: #eef4fd; ">Budget Range:</label><br />
+          <select name="Budget_Range" id="Budget_Range" style="height: 25px; width: 200px;">
+            <optgroup label="Min-Max">
+              <option value="">R1000-R3000</option>
+              <option value="">R3000-R5000</option>
+              <option value="">R5000-R10000</option>
+              <option value="">R10000-R30000</option>
+              <option value="">R30000-R50000</option>
+              <option value="">R50000-R100000</option>
+            </optgroup></select
+          ><br /><br />
+          <input type="submit" id="button" value="Request !!">
+          <br/>
+        </form>
+      </div>
+      <section class="Icons" style="margin-top: 25px;">
+        <div class="facebook">
+          <img
+            src="Photos/facebook-logo-facebook-icon-transparent-free-png.webp"
+            alt=""
+            style="width: 50px; height: 50px; border-radius: 360%"
+          />
+          <p style="color: white; margin-left: 20px; margin-top: 18px;">@InnovativeTech</p>
+
+        </div>
+
+        <div class="twitter">
+          <img
+            src="Photos/twitter.jpg"
+            alt=""
+            style="width: 50px; height: 50px; border-radius: 360%"
+          />
+          <p style="color: white; margin-left: 20px; margin-top: 18px;">@InnovativeTech2</p>
+        </div>
+
+        <div class="instagram">
+          <img
+            src="Photos/instagram-6338393_1280.webp"
+            alt=""
+            style="width: 50px; height: 50px; border-radius: 360%"
+          />
+          <p style="color: white; margin-left: 20px; margin-top: 18px;">@Innovative_Tech</p>
+        </div>
+      </section>
+    <br/>
+
+      </footer>
+    </footer>
+</html>

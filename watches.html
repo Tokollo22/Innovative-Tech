@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watches</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="java.js"></script>
+
+  </head>
+    <header id="header">
+    <nav>
+      <div class="logo">
+        <i class="fa-solid fa-microchip"></i>
+        <span
+          ><strong>Innovative</strong
+          ><strong style="color: #2563eb">-Tech</strong></span
+        >
+      </div>
+
+      <div class="right-side" style="margin-right: 0px">
+        <div class="search-box">
+          <input type="text" placeholder="Search products....." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <i class="fa-regular fa-user" style="margin-left: 50px"></i>
+        <p style="font-size: 13px; margin-left: -0px">Account</p>
+        <div class="wishlist-nav">
+          <button type="button" class="wishlist-trigger" id="wishlistToggle">
+            <i class="fa-regular fa-heart" style="margin-right: 2px"></i>
+            <span style="font-size: 13px;">Wishlist(<span id="wishlistCount">0</span>)</span>
+          </button>
+          <div class="wishlist-dropdown" id="wishlistDropdown">
+            <ul id="wishlistList"></ul>
+          </div>
+        </div>
+        <div class="cart-nav">
+          <button type="button" class="cart-trigger" id="cartToggle">
+            <i class="fa-solid fa-cart-shopping" style="margin-right: 2px"></i>
+            <span style="font-size: 13px;">Cart (<span id="cartCount">0</span>)</span>
+          </button>
+          <div class="cart-dropdown" id="cartDropdown">
+            <ul id="cartList"></ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body style="margin-top: 7%;">
+    <section>
+      <div class="nav-bar-bottom" style="justify-items: center; margin-top: 60px;">
+      <ul class="nav-links" style="display: flex; gap: 70px;">
+        <li><a  href="index.html">Home</a></li>
+        
+        <li><a class="active" href="#category">Shop</a>
+        <ul class="dropmenu">
+          <li><a href="#">Laptop</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">SmartPhones</a></li>
+          <li><a href="#">HeadPhones</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    
+    </div>
+    </section>
+    <br></br>
+    <h2 style="margin-left: 20px;">Watches</h2>
+    <br></br>
+
+    <section class="search_things">
+        <div>
+            <p><strong>212</strong> results</p>
+        </div>
+        <div class="filter">
+            <div>
+            <label for="sort_by"><strong>Sort:</strong> </label>
+            <select name="Sort By" class="filter_items">
+            <optgroup label="Sort by">
+              <option value="">Default</option>
+              <option value="">Price low to high</option>
+              <option value="">Price high to low</option>
+              <option value="">Most recent ads</option>
+              <option value="">Model old to new</option>
+              <option value="">Model new to old</option>
+            </optgroup></select>
+        </div>
+    <hr class="hr">
+        <div>
+             <label for="brand"><strong>Brand:</strong> </label>
+            <select name="Brand" class="filter_items" >
+            <optgroup label="Brand">
+            <option value="">Default</option>
+              <option value="">Apple</option>
+              <option value="">Acer</option>
+              <option value="">Asus</option>
+              <option value="">Connex</option>
+              <option value="">Lenovo</option>
+              <option value="">Samsung</option>
+              <option value="">Vivo</option>
+              
+            </optgroup></select>
+        </div>
+        <hr class="hr">
+        <div>
+            <label for="brand"><strong>Budget:</strong> </label>
+            <select name="Budget_Range" class="filter_items">
+            <optgroup label="Min-Max">
+                <option value="">Default</option>
+              <option value="">R1000-R3000</option>
+              <option value="">R3000-R5000</option>
+              <option value="">R5000-R10000</option>
+              <option value="">R10000-R30000</option>
+              <option value="">R30000-R50000</option>
+              <option value="">R50000-R100000</option>
+            </optgroup></select>
+        </div>
+        </div>
+    
+    </section>
+
+    <section class="items_available">
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/apple_watch.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R5 799</h2>
+                <h3>Apple Watch SE 3</h3>
+                <p>Starlight Sport Band</p>
+
+                <div class="details">
+                    <span>New</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/apple_watch2.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R7 999</h2>
+                <h3>Apple Watch Series 10 GPS</h3>
+                <p>Denim Sport Band - M/L</p>
+
+                <div class="details">
+                    <span>New</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/apple_watch3.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R9 999</h2>
+                <h3>Apple Watch Series 10 GPS</h3>
+                <p>Stone Grey Sport Band - M/L</p>
+
+                <div class="details">
+                    <span>New</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/apple_watch4.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R599</h2>
+                <h3>Bellroy Venture Strap</h3>
+                <p>Apple Watch</p>
+
+                <div class="details">
+                    <span>New</span>
+                    <span>(42-49mm) Large</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="items_available">
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/rvil.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R799</h2>
+                <h3>RVLRI Smart Watch</h3>
+                <p>Pink Resin</p>
+
+                <div class="details">
+                    <span>New</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/reflex.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R2 995</h2>
+                <h3>Reflex Active</h3>
+                <p>Series 44 Amoled GPS</p>
+
+                <div class="details">
+                    <span>New</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/reflex2.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R2 495</h2>
+                <h3>Reflex Active</h3>
+                <p>Black Series 51 Smart Watch</p>
+
+                <div class="details">
+                    <span>New</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/reflex3.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R3 595</h2>
+                <h3>Reflex Active</h3>
+                <p>Black Silicone Series 45</p>
+
+                <div class="details">
+                    <span>New</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="items_available">
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/reflex4.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R2 095</h2>
+                <h3>Reflex Active</h3>
+                <p>Green Silicone Series 40</p>
+
+                <div class="details">
+                    <span>Used</span>
+                    <span>Minor scratches</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/reflex5.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R3 195</h2>
+                <h3>Reflex Active</h3>
+                <p>Black Sea Venture</p>
+
+                <div class="details">
+                    <span>New</span>
+                    
+                </div>
+            </div>
+
+        </div>
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/reflex6.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R2 395</h2>
+                <h3>Reflex Active</h3>
+                <p>Series 36 Watch & Earphone Set</p>
+
+                <div class="details">
+                    <span>New</span>
+                    <span style="color: red;"><strong>Buy 1 get 1 free</strong></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="laptop-card">
+            <div class="card-imag">
+                <img src="watches/reflex7.jpg" alt="laptop picture">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="cart-content">
+                <span class="badge">Recent</span>
+                <h2>R2 095</h2>
+                <h3>Reflex Active</h3>
+                <p>Blue Silicone Series 40</p>
+
+                <div class="details">
+                    <span>New</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br></br>
+    <br></br>
+    <section style="justify-items: center;">
+        <div style="display: flex; gap: 25px; ">
+            <button style="height: 28px; width: 28px; border-radius: 50%; margin-top: -3px; border: none; color: white; background: #2563eb;font-size: 18px;">1</button>
+            <p style="font-size: 18px;">2</p>
+            <p style="font-size: 18px;">3</p>
+            <p style="font-size: 18px;">4</p>
+        </div>
+    </section>
+    <br></br>
+    <br></br>
+    
+  </body>
+
+  <footer class="End">
+      <br/>
+      <br/>
+      <div style="width: 300px; margin-left: -100px; margin-top: 25px;">
+        <p style="color: white;">Innovative Tech is your trusted destination for the latest technology products. We are commited to providing high-quality laptop, smartphones, gaming accessories and more at competitive prices. Our mission is to make cutting edge technology accessible while delivering exceptional customer service, secure shopping and seamless online experience.</p>
+      </div>
+      
+
+      <div class="form" style="margin-top: 5px;">
+        <section class="form">
+        <form action="\submit_form" method="post">
+          <label for="name" style="color: #eef4fd;">Name:</label><br />
+          <input type="text" name="name" id="name" style=" background: #eef4fd; height: 25px; border-radius: 5px;" required/><br />
+          <label for="surname" style="color: #eef4fd;">Surname:</label><br />
+          <input type="text" name="surname" id="surname" style="background: #eef4fd; height: 25px; border-radius: 5x;"  required /><br />
+          <label for="phone" style="color: #eef4fd;">Phone:</label><br />
+          <input type="tel" name="phone" id="phone" style="background: #eef4fd; height: 25px; border-radius: 5px;"  required /><br />
+          <label for="email" style="color: #eef4fd;">Email:</label><br />
+          <input type="email" name="email" id="email" style="background: #eef4fd; height: 25px; border-radius: 5px;"  required /><br /><br />
+
+          <label for="budget"style="color: #eef4fd; ">Budget Range:</label><br />
+          <select name="Budget_Range" id="Budget_Range" style="height: 25px; width: 200px;">
+            <optgroup label="Min-Max">
+              <option value="">R1000-R3000</option>
+              <option value="">R3000-R5000</option>
+              <option value="">R5000-R10000</option>
+              <option value="">R10000-R30000</option>
+              <option value="">R30000-R50000</option>
+              <option value="">R50000-R100000</option>
+            </optgroup></select
+          ><br /><br />
+          <input type="submit" id="button" value="Request !!">
+          <br/>
+        </form>
+      </div>
+      <section class="Icons" style="margin-top: 25px;">
+        <div class="facebook">
+          <img
+            src="Photos/facebook-logo-facebook-icon-transparent-free-png.webp"
+            alt=""
+            style="width: 50px; height: 50px; border-radius: 360%"
+          />
+          <p style="color: white; margin-left: 20px; margin-top: 18px;">@InnovativeTech</p>
+
+        </div>
+
+        <div class="twitter">
+          <img
+            src="Photos/twitter.jpg"
+            alt=""
+            style="width: 50px; height: 50px; border-radius: 360%"
+          />
+          <p style="color: white; margin-left: 20px; margin-top: 18px;">@InnovativeTech2</p>
+        </div>
+
+        <div class="instagram">
+          <img
+            src="Photos/instagram-6338393_1280.webp"
+            alt=""
+            style="width: 50px; height: 50px; border-radius: 360%"
+          />
+          <p style="color: white; margin-left: 20px; margin-top: 18px;">@Innovative_Tech</p>
+        </div>
+      </section>
+    <br/>
+    <br/>
+    <br/>
+
+      
+    </footer>
+</html>
